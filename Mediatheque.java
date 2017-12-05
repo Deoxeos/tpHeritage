@@ -23,13 +23,13 @@ public class Mediatheque {
 				}
 			} else {
 				if (critere.toLowerCase().equals("auteur")) {
-					if (current.toString().toLowerCase().split("par")[1].contains(valeur.toLowerCase())) {
+					if (current.toString().toLowerCase().split("\"")[2].contains(valeur.toLowerCase())) {
 						result.add(current);
 					}
 				}
 
 				if (critere.toLowerCase().equals("titre")) {
-					if (current.toString().toLowerCase().split("par")[0].contains(valeur.toLowerCase())) {
+					if (current.toString().toLowerCase().split("\"")[1].contains(valeur.toLowerCase())) {
 
 						result.add(current);
 					}
